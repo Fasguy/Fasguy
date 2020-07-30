@@ -1,0 +1,160 @@
+<svg fill="black" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" id='main'>
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				svg#main {
+					background-color: black;
+					image-rendering: pixelated;
+					image-rendering: crisp-edges;
+					image-rendering: -moz-crisp-edges;
+					image-rendering: -o-pixelated;
+				}
+				.header {
+					margin: auto;
+					display: table;
+				}
+				.header > * {
+					display: table-cell;
+					vertical-align: middle;
+				}
+				/*
+				--oF:	(Pixel) Offset Front
+				--oU:	(Pixel) Offset Up
+				--pW:	Pixel Width
+				--pH:	Pixel Height
+				--rY:	Y-Rotation
+				--rX:	X-Rotation
+				*/
+				.V_Viewport {
+					padding: 25px 0;
+					text-align: left;
+					height: 200px;
+					width: 200px;
+					perspective: 500px;
+					border: none;
+				}
+				.V_Object {
+					animation: V_Spin 4s infinite linear;
+					width: 200px;
+					height: 200px;
+					position: relative;
+					transform-style: preserve-3d;
+					transform-origin: center;
+				}
+				.V_Object * {
+					position: absolute;
+				}
+				.V_Pixel {
+					-ms-interpolation-mode: nearest-neighbor;
+					transform-origin: top center;
+					--pW: 2;
+					--pH: 1;
+					--oU: 0;
+					--oF: 0;
+					--rY: 0;
+					--rX: 0;
+					transform: rotateY(calc(1deg * var(--rY))) rotateX(calc(1deg * var(--rX))) translateZ(calc(12.5px * (var(--oF) - 1))) translateY(calc(12.5px * var(--oU)));
+					background-color: darkgrey;
+					width: calc(12.5px * var(--pW));
+					height: calc(12.5px * var(--pH));
+					backface-visibility: hidden;
+				}
+				.V_FR {
+					animation: Layerfix 4s infinite linear;
+					transform: translateZ(12.5px);
+					width: 200px;
+					height: 200px;
+				}
+				.V_BK {
+					animation: Layerfix 4s -2s infinite linear;
+					transform: translateZ(-12.5px);
+					width: 200px;
+					height: 200px;
+				}
+				.headtext {
+					height: 50px;
+					padding-left: 25px;
+					color: white;
+				}
+				@keyframes V_Spin {
+					0% {
+						transform: rotateX(-25deg) rotateY(0deg);
+					}
+					24.999% {
+						transform: rotateX(-25deg) rotateY(88.419deg);
+					}
+					25% {
+						transform: rotateX(-25deg) rotateY(91.581deg);
+					}
+					74.999% {
+						transform: rotateX(-25deg) rotateY(268.419deg);
+					}
+					75% {
+						transform: rotateX(-25deg) rotateY(271.581deg);
+					}
+					100% {
+						transform: rotateX(-25deg) rotateY(360deg);
+					}
+				}
+				@keyframes Layerfix {
+					0%, 100% {
+						z-index: 9999;
+					}
+					50% {
+						z-index: -9999;
+					}
+				}
+				@supports (-moz-appearance:none) {
+					@keyframes Layerfix {
+						0%, 100% {
+							z-index: -9999;
+						}
+						50% {
+							z-index: 9999;
+						}
+					}
+				}
+			</style>
+			<div class='header'>
+				<div class='V_Viewport'>
+					<div class='V_Object'>
+						<img class='V_FR' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVDhPlZINDoAgCIWF+9T9z1H3sXwNGiL+fZsLmu+JIKUJOedDwg9mviWcA/Hj8IZdIrFiTVi+Q4rmxJI0EdGlJksGAHePTJYNgDcBWwYR3TGiPJSJ2J+q/CPFZttZgLwIQ+xe1pNsZ3fYGqOu6jX6UrUK+39UWTGL5yvpOr4Sy7JhZDITN+/AC6qGNaT0AgA68dnuHz6RAAAAAElFTkSuQmCC'/>
+						<img class='V_BK' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVDhPlZINDoAgCIWF+9T9z1H3sXwNGiL+fZsLmu+JIKUJOedDwg9mviWcA/Hj8IZdIrFiTVi+Q4rmxJI0EdGlJksGAHePTJYNgDcBWwYR3TGiPJSJ2J+q/CPFZttZgLwIQ+xe1pNsZ3fYGqOu6jX6UrUK+39UWTGL5yvpOr4Sy7JhZDITN+/AC6qGNaT0AgA68dnuHz6RAAAAAElFTkSuQmCC'/>
+						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:9;--oF:3;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:11;--oF:4;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:12;--oF:5;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:11;--oU:3;--oF:9;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:14;--oF:8;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:1;--oF:12;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:2;--oF:13;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:8;--oF:13;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:3;--oF:14;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:3;--oU:4;--oF:15;--rY:90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:3;--oU:9;--oF:1;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:12;--oF:0;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:13;--oF:-1;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:14;--oF:-2;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:11;--oU:2;--oF:-5;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:1;--oF:-6;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:3;--oF:-9;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:4;--oF:-10;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:5;--oF:-11;--rY:-90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:0;--oF:-8;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:2;--oF:-10;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:3;--oF:-11;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:4;--oF:-12;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:6;--oF:-1;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:4;--oU:7;--oF:0;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--pH:4;--oU:8;--oF:-7;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:11;--oF:-1;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:12;--oF:-2;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pW:2;--oU:13;--oF:-3;--rY:90;--rX:90'></div>
+					</div>
+				</div>
+				<div>
+					<img class='headtext' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAKCAYAAADGmhxQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADYSURBVDhPnZEBDkIxCEOZ97+zUqSzY2xRXzKFtu43fiNPIaWFqkcwSSlIaZJyoPtpJouWyzyL6dCnzp3npKe0eKSbkQOqjfgY4+0ILpvrm596bh9OOlAPM9D95j1iSiDweOhYnmhe6bR/WQqijLS/lgOa7/i2qGbk+ZjHUhAwrA+uD6l7VxJap3d4Dm9r5lkO8/aKAYOk7gDZWlQ53fUr2z+oF7JELYIMT8e/XsdWkKCUXxSkNKmFma06uHkdzOdqMbgYv86L5oxvUnXuQLOqg5sHqq+7mdkLdPErk1NGng8AAAAASUVORK5CYII='/>
+				</div>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
