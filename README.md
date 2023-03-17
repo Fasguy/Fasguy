@@ -1,4 +1,4 @@
-<a href="#"><img src="https://github.com/Fasguy/Fasguy/raw/master/content/content.svg" width="100%" height="250"></a>
+<a href="#"><img src="https://github.com/Fasguy/Fasguy/raw/trunk/content/content.svg" width="100%" height="250"></a>
 
 # What?
 Stuff.
