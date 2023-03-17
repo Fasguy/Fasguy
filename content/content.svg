@@ -82,18 +82,6 @@
 					0% {
 						transform: rotateX(-25deg) rotateY(0deg);
 					}
-					24.999% {
-						transform: rotateX(-25deg) rotateY(88.419deg);
-					}
-					25% {
-						transform: rotateX(-25deg) rotateY(91.581deg);
-					}
-					74.999% {
-						transform: rotateX(-25deg) rotateY(268.419deg);
-					}
-					75% {
-						transform: rotateX(-25deg) rotateY(271.581deg);
-					}
 					100% {
 						transform: rotateX(-25deg) rotateY(360deg);
 					}
@@ -107,7 +95,7 @@
 					}
 				}
 				@supports (-moz-appearance:none) {
-					/* Disable for Firefox. Causes other grpahical glitches, if left active. */
+					/* Disable for Firefox. Causes other graphical glitches, if left active. */
 					@keyframes Layerfix {
 					}
 				}
