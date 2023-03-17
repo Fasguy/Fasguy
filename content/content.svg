@@ -107,13 +107,8 @@
 					}
 				}
 				@supports (-moz-appearance:none) {
+					/* Disable for Firefox. Causes other grpahical glitches, if left active. */
 					@keyframes Layerfix {
-						0%, 100% {
-							z-index: -9999;
-						}
-						50% {
-							z-index: 9999;
-						}
 					}
 				}
 			</style>
