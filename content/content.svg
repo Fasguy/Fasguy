@@ -59,17 +59,19 @@
 					height: calc(12.5px * var(--pH));
 					backface-visibility: hidden;
 				}
+				.V_IMG {
+					background-size: 200px;
+					background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAJUExURf7+/kdwTP///zkErbgAAAACdFJOUy0AVrmX1wAAAD9JREFUCNdjCA1lAMKQVaIMoUGrWoFE00Ig0bICSLRqwIgGRgZHkKwGhGgQZdASag1l8GoCEkChUAagfrA5oQCqXhceMRvSOgAAAABJRU5ErkJggg==');
+					width: 200px;
+					height: 200px;
+				}
 				.V_FR {
 					animation: Layerfix 4s infinite linear;
 					transform: translateZ(12.5px);
-					width: 200px;
-					height: 200px;
 				}
 				.V_BK {
 					animation: Layerfix 4s -2s infinite linear;
 					transform: translateZ(-12.5px);
-					width: 200px;
-					height: 200px;
 				}
 				.headtext {
 					height: 50px;
@@ -118,37 +120,37 @@
 			<div class='header'>
 				<div class='V_Viewport'>
 					<div class='V_Object'>
-						<img class='V_FR' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAJUExURf7+/kdwTP///zkErbgAAAACdFJOUy0AVrmX1wAAAD9JREFUCNdjCA1lAMKQVaIMoUGrWoFE00Ig0bICSLRqwIgGRgZHkKwGhGgQZdASag1l8GoCEkChUAagfrA5oQCqXhceMRvSOgAAAABJRU5ErkJggg=='/>
-						<img class='V_BK' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAJUExURf7+/kdwTP///zkErbgAAAACdFJOUy0AVrmX1wAAAD9JREFUCNdjCA1lAMKQVaIMoUGrWoFE00Ig0bICSLRqwIgGRgZHkKwGhGgQZdASag1l8GoCEkChUAagfrA5oQCqXhceMRvSOgAAAABJRU5ErkJggg=='/>
-						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:9;--oF:3;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:11;--oF:4;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:12;--oF:5;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:11;--oU:3;--oF:9;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:14;--oF:8;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:1;--oF:12;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:2;--oF:13;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:8;--oF:13;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:3;--oF:14;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:3;--oU:4;--oF:15;--rY:90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:3;--oU:9;--oF:1;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:12;--oF:0;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:13;--oF:-1;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:14;--oF:-2;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:11;--oU:2;--oF:-5;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:1;--oF:-6;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:3;--oF:-9;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:4;--oF:-10;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:5;--oF:-11;--rY:-90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:0;--oF:-8;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:2;--oF:-10;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:3;--oF:-11;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:2;--oU:4;--oF:-12;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:6;--oF:-1;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:4;--oU:7;--oF:0;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--pH:4;--oU:8;--oF:-7;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:11;--oF:-1;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:12;--oF:-2;--rY:90;--rX:90'></div>
-						<div class='V_Pixel' style='--pW:2;--oU:13;--oF:-3;--rY:90;--rX:90'></div>
+						<div class="V_IMG V_FR"></div>
+						<div class="V_IMG V_BK"></div>
+						<div class='V_Pixel' style='--pH:2;--oU:9;--oF:3;--rY:90'></div>
+						<div class='V_Pixel' style='--oU:11;--oF:4;--rY:90'></div>
+						<div class='V_Pixel' style='--oU:12;--oF:5;--rY:90'></div>
+						<div class='V_Pixel' style='--pH:11;--oU:3;--oF:9;--rY:90'></div>
+						<div class='V_Pixel' style='--oU:14;--oF:8;--rY:90'></div>
+						<div class='V_Pixel' style='--oU:1;--oF:12;--rY:90'></div>
+						<div class='V_Pixel' style='--oU:2;--oF:13;--rY:90'></div>
+						<div class='V_Pixel' style='--pH:2;--oU:8;--oF:13;--rY:90'></div>
+						<div class='V_Pixel' style='--oU:3;--oF:14;--rY:90'></div>
+						<div class='V_Pixel' style='--pH:3;--oU:4;--oF:15;--rY:90'></div>
+						<div class='V_Pixel' style='--pH:3;--oU:9;--oF:1;--rY:-90'></div>
+						<div class='V_Pixel' style='--oU:12;--oF:0;--rY:-90'></div>
+						<div class='V_Pixel' style='--oU:13;--oF:-1;--rY:-90'></div>
+						<div class='V_Pixel' style='--oU:14;--oF:-2;--rY:-90'></div>
+						<div class='V_Pixel' style='--pH:11;--oU:2;--oF:-5;--rY:-90'></div>
+						<div class='V_Pixel' style='--oU:1;--oF:-6;--rY:-90'></div>
+						<div class='V_Pixel' style='--oU:3;--oF:-9;--rY:-90'></div>
+						<div class='V_Pixel' style='--oU:4;--oF:-10;--rY:-90'></div>
+						<div class='V_Pixel' style='--pH:2;--oU:5;--oF:-11;--rY:-90'></div>
+						<div class='V_Pixel' style='--pH:2;--oU:0;--oF:-8;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--oU:2;--oF:-10;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--oU:3;--oF:-11;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pH:2;--oU:4;--oF:-12;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--oU:6;--oF:-1;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pH:4;--oU:7;--oF:0;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--pH:4;--oU:8;--oF:-7;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--oU:11;--oF:-1;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--oU:12;--oF:-2;--rY:90;--rX:90'></div>
+						<div class='V_Pixel' style='--oU:13;--oF:-3;--rY:90;--rX:90'></div>
 					</div>
 				</div>
 				<div>
